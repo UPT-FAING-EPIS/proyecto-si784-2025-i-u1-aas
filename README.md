@@ -35,7 +35,7 @@ El problema afecta tanto a los clientes como a los trabajadores:
 
 ### 3. Limitaciones y posibles implementaciones
 
-La tecnología puede resolver gran parte del problema mediante un sistema digitalizado que automatice la gestión de pedidos y cobros. La solución propuesta es implementar tablets en cada mesa con un sistema integrado de pedidos, mejorando la precisión y la eficiencia. Sin embargo, el factor humano sigue siendo clave en la preparación y entrega de los pedidos, por lo que la capacitación del personal será un complemento esencial para la implementación exitosa del sistema.
+La tecnología puede resolver gran parte del problema mediante un sistema digitalizado que automatice la gestión de pedidos. La solución propuesta es implementar sistema de identificación en cada mesa, y el uso de tablets en los servicios que ofrece el restobar para visualizar las ordenes de pedido, mejorando la precisión y la eficiencia. Sin embargo, el factor humano sigue siendo clave en la preparación y entrega de los pedidos, por lo que la capacitación del personal será un complemento esencial para la implementación exitosa del sistema.
 
 ## Objetivo del Proyecto
 
