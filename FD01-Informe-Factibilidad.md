@@ -83,7 +83,27 @@ Versión *1.0*
 
     1.3. Descripción
 
-        En que consiste el proyecto/importancia del mismo, contexto en que se va desenvolver
+       El "Sistema Automatizado de Pruebas y Análisis de URLs mediante Web Scraping y Consultas API con Configuración de IPs y
+       Regiones" es una plataforma diseñada para evaluar el rendimiento y la disponibilidad de APIs y páginas web, permitiendo
+       a pequeñas y medianas  empresas comprobar la capacidad de sus sistemas ante distintos escenarios sin necesidad de realizar
+       grandes inversiones. En un entorno digital donde la velocidad y estabilidad de los servicios web son clave para la
+       experiencia del usuario y la competitividad del negocio, contar con herramientas accesibles y efectivas para medir estos
+       factores es fundamental. El sistema permite a los usuarios ingresar una URL, ya sea de una API o una página web, y
+       configurarlo para realizar pruebas automatizadas. Si se trata de una API, se ejecutarán consultas bajo parámetros
+       personalizables, como headers, payloads, autenticación, frecuencia de consultas y selección de regiones. Si la URL
+       corresponde a una página web, el sistema aplicará técnicas de web scraping para extraer información y completar datos con
+        valores aleatorios, simulando interacciones de usuario. Estas pruebas pueden realizarse con una IP única o con múltiples
+       IPs desde diferentes regiones, lo que permite simular tráfico de distintas ubicaciones geográficas y analizar el
+       comportamiento del sistema bajo estas condiciones. A lo largo del proceso, el sistema monitorea y registra métricas clave,
+       como tiempos de respuesta y resistencia ante una alta demanda de solicitudes. Una vez finalizada la prueba, el usuario
+       recibe un informe detallado en formato PDF que incluye datos esenciales y gráficos sobre el rendimiento del sitio o la API,
+       ayudando a identificar posibles puntos débiles o cuellos de botella. Además, los usuarios tendrán acceso a un historial de
+       pruebas para evaluar tendencias y comparar resultados a lo largo del tiempo. En un contexto donde las grandes empresas
+       pueden invertir en pruebas de carga y herramientas avanzadas de monitoreo, este sistema busca ofrecer una alternativa
+       accesible para empresas con presupuestos más limitados. Su enfoque es facilitar pruebas de rendimiento y disponibilidad
+       sin costos elevados, contribuyendo a que más negocios puedan garantizar la estabilidad y eficiencia de sus plataformas
+       digitales. Si bien el código fuente no será público, la herramienta estará disponible para su uso sin costo, tanto para
+       empresas como para usuarios individuales que deseen evaluar sus propios sistemas.
 
     1.4. Objetivos
 
