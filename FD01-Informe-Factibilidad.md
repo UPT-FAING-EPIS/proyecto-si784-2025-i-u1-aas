@@ -10,30 +10,32 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *{Nombre de Proyecto}***
+**Proyecto *"Plataforma de Pruebas Automatizadas para APIs y Web con Análisis Personalizado"***
 
-Curso: *{Nombre de Asignatura}*
+Curso: *Calidad y Pruebas de Software*
 
-Docente: *{Nombre de Docente}*
+Docente: *Mag. Patrick Cuadros Quiroga*
 
 Integrantes:
 
-***{Apellidos y nombres del estudiante (código universitario)}***
+***Ayala Ramos, Carlos Daniel (2022074266)***<br>
+***Salas Jimenez, Walter Emmanuel (2022073896)***<br>
+***Akhtar Oviedo, Ahmed Hasan (2022074261)***
 
 **Tacna – Perú**
 
-***{Año}***
+***2025***
 
 **  
 **
 </center>
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-Sistema *{Nombre del Sistema}*
+Sistema *Plataforma de Pruebas Automatizadas para APIs y Web con Análisis Personalizado*
 
 Informe de Factibilidad
 
-Versión *{1.0}*
+Versión *1.0*
 
 |CONTROL DE VERSIONES||||||
 | :-: | :- | :- | :- | :- | :- |
