@@ -107,9 +107,33 @@ Versión *1.0*
 
     1.4. Objetivos
 
-        1.4.1 Objetivo general
+       1.4.1 Objetivo general
+   
+            Desarrollar una plataforma de pruebas automatizadas que permita a pequeñas y medianas empresas evaluar el rendimiento
+            y la disponibilidad de sus APIs y páginas web, ofreciendo un análisis personalizado basado en consultas configurables
+            y web scraping. La herramienta facilitará la simulación de tráfico desde distintas regiones, proporcionando reportes
+            detallados con métricas clave para ayudar a los usuarios a optimizar sus sistemas sin incurrir en altos costos.
+
+
         1.4.2 Objetivos Específicos
-            Para cada objetivo específico se indicara que se va a lograr
+   
+            Desarrollar un sistema de pruebas automatizadas que permita a los usuarios evaluar el rendimiento y la disponibilidad
+            de APIs y páginas web mediante consultas configurables y técnicas de web scraping.
+
+            Desarrollar un sistema de monitoreo en tiempo real que registre métricas clave, como tiempos de respuesta, resistencia
+            ante carga de solicitudes y posibles fallos en el servicio.
+
+            Diseñar y generar informes en PDF que presenten de manera clara y visualmente comprensible los resultados de las
+            pruebas, incluyendo métricas esenciales y gráficos informativos.
+
+            Implementar un sistema de notificaciones por correo electrónico que informe a los usuarios cuando las pruebas hayan
+            finalizado y les envíe los reportes correspondientes.
+
+            Garantizar que la plataforma sea accesible y fácil de usar, enfocándose en una interfaz intuitiva y en procesos
+            automatizados que faciliten la ejecución de pruebas sin necesidad de conocimientos técnicos avanzados.
+
+            Ofrecer la plataforma de forma gratuita para pequeñas y medianas empresas, asegurando que el código fuente
+            permanezca cerrado, pero que la herramienta esté disponible para su uso sin costo.
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
