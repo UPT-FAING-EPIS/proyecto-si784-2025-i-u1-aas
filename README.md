@@ -18,7 +18,7 @@ El sistema abarca:
 - ✏️ Ayuda automatizada para completar documentos en formatos estandarizados (FD01-FD06).
 - 📝 Un módulo de captura de datos donde el usuario ingresará información clave.
 - 🧠 Integración de IAs para procesar y generar contenido por secciones.
-- 📄 Generación de documentos en formatos PDF y DOCX.
+- 📄 Generación de documentos en formatos PDF.
 - 📂 Almacenamiento y gestión de documentos generados.
 
 **⚠️ El sistema no incluye la edición manual posterior al documento generado dentro de la plataforma.**
@@ -31,7 +31,7 @@ El sistema abarca:
 
 ## 🎯 Objetivo del Proyecto
 
-Automatizar la creación de documentos formales siguiendo formatos estandarizados, reduciendo el esfuerzo manual y asegurando la calidad del contenido ✅. La solución debe ser rápida, confiable y fácil de usar para estudiantes, desarrolladores y profesionales que necesiten generar documentación técnica o académica 📚🖥️.
+Automatizar la creación de documentos formales siguiendo formatos estandarizados, reduciendo el esfuerzo manual y asegurando la calidad del contenido ✅. La solución debe ser confiable y fácil de usar,  para estudiantes, desarrolladores y profesionales que necesiten generar documentación técnica o académica 📚🖥️.
 
 ## 🔹 2. Tecnologías y herramientas usadas
 
