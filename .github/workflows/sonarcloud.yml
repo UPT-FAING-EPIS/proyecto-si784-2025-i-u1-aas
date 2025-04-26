@@ -1,0 +1,45 @@
+name: SonarCloud
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  sonarcloud:
+    name: Analyze with SonarCloud
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'  # Cambia si tu proyecto usa otra versión de PHP
+
+      - name: Install dependencies
+        run: composer install --no-progress --no-suggest
+
+      - name: Generate test and coverage reports
+        run: |
+          mkdir -p test-reports
+          # Aquí iría tu comando phpunit si tienes pruebas
+          # php vendor/bin/phpunit --log-junit test-reports/test-report.xml --coverage-clover coverage.xml
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@v2.2.0
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.projectKey=apibank89_gdi-ia
+            -Dsonar.organization=apibank89
+            -Dsonar.host.url=https://sonarcloud.io
+            -Dsonar.php.coverage.reportPaths=coverage.xml
+            -Dsonar.php.tests.reportPath=test-report.xml
+            -Dsonar.language=php
+            -Dsonar.sources=.
+        env:
+          SONAR_TOKEN: b7c612c055531f03f4b9b48fe451e65be9bd23b2
