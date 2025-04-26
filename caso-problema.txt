@@ -1,0 +1,107 @@
+Quiero hacer un proyecto que se trata básicamente lo siguiente:
+
+Quiero hacer una página web con HTML, CSS y de Back sea de PHP, quiero hacer una herramienta de ayuda para hacer documentación, por ejemplo, documento de arquitectura de deploy, nuestro programa ayudara a crear las imagenes necesarias o dara la informacion necesaria dependendiencio el proyecto que quiera el usuario.
+
+Mi idea no esta bien estructurada, por eso quiero que tomes en cuenta las siguientes preguntas donde explico aun mas el proyecto a realizar:
+Sobre los Usuarios y sus Necesidades:
+
+¿Quiénes serán los usuarios principales de esta herramienta? (Ej: Arquitectos de software, DevOps, desarrolladores, gerentes de proyecto, etc.)
+Nuestro proyecto está dirigido para todos los usarios, pues la IA se adaptara al proyecto que quiera el usuario, asi que pueden entrar todos los roles de informatica.
+
+¿Qué tipo de documentación específica quieren generar estos usuarios? (Ej: Diagramas de despliegue, diagramas de componentes, flujos de datos, documentación de APIs, etc.)
+Básicamente, todo tipo de documentación, las que mencionas y más.
+
+¿Qué nivel de conocimiento técnico se espera que tengan los usuarios? (¿Son expertos en la materia o necesitan guías más detalladas?)
+No se espera que tengan conocimientos avanzados, solamente que sepan que están haciendo y como lo pueden hacer, ahi la IA actuara para poder hacerlo mejor con respecto a la documentación.
+
+¿Cuáles son los principales problemas o puntos débiles que enfrentan actualmente al crear esta documentación? (Ej: Falta de plantillas, dificultad para visualizar la arquitectura, inconsistencia en la documentación, mucho tiempo invertido, etc.)
+El tiempo invertido en la documentación en mucho para aquellos que no están acostumbrados a realizar documentación.
+
+¿Cómo se imaginan los usuarios que esta herramienta les facilitaría el proceso de documentación?
+Los usuarios explicaran su problema o el proyecto que están realizando para que la documentación impulsada por IA ayude a esclarecer las cosas y ahorrar tiempo.
+
+
+Sobre la Funcionalidad de la Herramienta:
+
+¿Cómo interactuará el usuario con la herramienta para definir el proyecto y la documentación deseada? (¿A través de formularios, selección de plantillas, carga de archivos de configuración, etc.?)
+A través de formularios explicara la idea de su proyecto, mediante selección de plantillas podrá escoger el documento que tiene que realizar, para que así la IA tenga contexto de que se debe hacer, y en donde se debe hacer.
+
+¿Qué tipo de "imágenes necesarias" te imaginas que la herramienta podría generar? (Ej: Diagramas UML, diagramas de infraestructura en la nube, representaciones visuales de flujos de datos, etc. ¿Serán imágenes estáticas o interactivas?)
+Se podrán hacer la mayoría de diagramas UML, solo serán imágenes al azar.
+
+¿Cómo la herramienta proporcionará la "información necesaria" dependiendo del proyecto? (¿Tendrá una base de conocimientos interna, se conectará a otras herramientas, guiará al usuario con preguntas específicas?)
+La IA tendrá los parámetros necesarios, el prompt necesario para que ocupe la mayoría de cosas y casos que el usuario requiera, se conectara a varias API's, y si la IA no esta segura de algo le preguntara al usuario donde el usuario podrá responder, para que así la IA tenga feedback.
+
+¿Habrá diferentes plantillas o tipos de documentación predefinidos que los usuarios podrán seleccionar?
+Si, habrán unas plantillas por si el usuario se anima a escogerlos.
+
+¿La herramienta permitirá la personalización de la documentación generada (texto, estilos, elementos vsuales)?
+No, si la IA saca algo como información o imagen, eso se quedara, hasta que el usuario haga otra iteración.
+
+¿Se integrará con otras herramientas que los usuarios ya utilizan (ej: sistemas de control de versiones, plataformas de gestión de proyectos)?
+No, solo se centrara en los documentos que el usuario entregara manualmente.
+
+¿Habrá funcionalidades para colaborar en la creación de la documentación?
+No, por ahora, solo sera personal.
+
+¿Cómo se gestionará y almacenará la documentación generada?
+Los documentos que la IA genere se guardaran en un servidor FTP, donde el usuario podrá descargarlo en los próximos días.
+
+¿Qué tan adaptable será la herramienta a diferentes tipos de proyectos y tecnologías?
+La IA como es generativa y es entendible se podrá adaptar fácilmente a diferentes tipos de roles de la industria tecnológica.
+
+Sobre los Aspectos Técnicos:
+
+¿Tienes alguna preferencia específica sobre las librerías de PHP que te gustaría utilizar?
+No, usaremos quizás las librerías necesarias para crear un pdf o todo lo que necesitemos, pero librerías especificas, todavía no.
+
+¿Has pensado en cómo se generarán las imágenes dinámicamente? (¿Se utilizarán librerías de gráficos en PHP, se integrará con alguna API externa?)
+Estaba pensando en integrar una API para la creación de gráficos de UML.
+
+¿Cómo se manejará la información específica del proyecto que el usuario ingrese? (¿Bases de datos, archivos de configuración, etc.?)
+Se manejara la información y se guardara en la base de datos, para así poder utilizarla cuando sea necesario.
+
+Cuando el usuario describe su proyecto a través de formularios, ¿qué tipo de información específica esperas que proporcione? (Ej: Lenguajes de programación utilizados, tipo de aplicación, arquitectura general si la conoce, objetivos del proyecto, etc.)
+Todas las opciones que estas dando.
+
+En la selección de plantillas, ¿qué categorías principales de documentos te imaginas que existirán? (Ej: Documentación de arquitectura, documentación de despliegue, documentación de diseño, documentación de API, etc.)
+Todos los documentos que me estas mencionando.
+
+Mencionaste que la IA se conectará a varias APIs. ¿Tienes en mente algún tipo específico de APIs que serían relevantes para la generación de documentación o diagramas? (Ej: APIs para generación de diagramas UML como PlantUML o Mermaid, APIs para información técnica general, etc.)
+Estaba pensando en agregar API´s para conectar a servicios como PlantUML o Mermaid. Que servirá para la creación de los diagramas UML.
+
+Cuando la IA haga preguntas al usuario para obtener feedback, ¿cómo se presentarán estas preguntas? (¿Dentro del mismo formulario, en una sección separada, de forma conversacional?) ¿Cómo se gestionará la información proporcionada por el usuario en estas interacciones?
+Dentro del mismo formulario, así el podrá responder todas las preguntas antes que la IA se ponga en marcha.
+
+Si el usuario no selecciona una plantilla, ¿cómo determinará la IA qué tipo de documentación generar o qué preguntas hacer inicialmente? ¿Habrá un flujo de preguntas genérico para entender el proyecto?
+Si no selecciona una plantilla, la IA ya tendrá una predefinida que entrara en acción cuando no se seleccione algún documento.
+
+Detalles sobre las Imágenes y la Documentación:
+
+Aunque las imágenes UML serán "al azar", ¿habrá algún parámetro o tipo de diagrama UML específico que la herramienta priorizará según el contexto del proyecto? (Ej: Si el usuario menciona "clases", la IA podría sugerir diagramas de clases.)
+Si, digamos, que la documentación necesite un diagrama de clases y un diagrama de secuencia, la IA debe preguntar al usuario preguntas que harán mas profundo el conocimiento del proyecto y la IA podrá hacer con total tranquilidad cualquier diagrama.
+
+¿Qué formato tendrán los documentos generados por la IA inicialmente? (¿Texto plano, Markdown, HTML?) Si mencionaste la creación de PDFs, ¿será una funcionalidad posterior o el formato final principal?
+Podrá ser, en texto plano o MarkDown, para que al final, el resultado se genere un PDF para descargar.
+
+¿Qué tipo de información crees que la IA podría extraer o generar automáticamente basándose en la descripción del proyecto del usuario? (Ej: Identificar componentes clave, posibles relaciones entre ellos, sugerir terminología estándar, etc.)
+Todo lo que mencionas.
+
+Aspectos Técnicos y de Implementación:
+
+Para la integración de la API de generación de gráficos UML, ¿has investigado alguna API específica o tienes alguna en mente?
+Las API´s de chatgpt, Gemini, y deepseek.
+
+¿Cómo se estructurará la base de datos para almacenar la información del proyecto y la documentación generada? ¿Qué tipo de información se guardará por cada proyecto?
+Esta estructurada en toda la información del usuario, sus consultas, y las respuestas de la IA que hizo el usuario, todo eso se tiene que guardar.
+
+En cuanto al servidor FTP, ¿ya tienes uno configurado o es parte de la infraestructura a desarrollar? ¿Cómo se gestionará el acceso de los usuarios a sus documentos?
+Es parte de la infraestructura a desarrollar, se gestionara el acceso guardando el archivo generado pdf para que los descarguen los días posteriores.
+
+Consideraciones Adicionales:
+
+¿Has pensado en cómo la herramienta podría manejar diferentes idiomas en el futuro? (Aunque no sea un requisito inicial, es bueno tenerlo en mente.)
+Si el usuario pide que sea por ejemplo en italiano, la IA como tiene la capacidad de alternar el texto en diferentes idiomas, lo hara.
+
+¿Qué métricas o indicadores de éxito te ayudarán a evaluar si la herramienta está cumpliendo su objetivo de ahorrar tiempo y facilitar la documentación?
+Cada resultado que de nuestra version beta sera revisado tanto por los modelos de IA con razonamiento y profesionales con experiencia en el sector. Para así mejorar los prompts a dar internamente.

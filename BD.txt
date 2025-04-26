@@ -1,0 +1,68 @@
+CREATE DATABASE IF NOT EXISTS generador_documentacion;
+
+USE generador_documentacion;
+
+CREATE TABLE IF NOT EXISTS Usuarios (
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    nombre VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS Plantillas (
+    id_plantilla INT PRIMARY KEY AUTO_INCREMENT,
+    nombre_plantilla VARCHAR(255) NOT NULL,
+    descripcion_plantilla TEXT
+);
+
+CREATE TABLE IF NOT EXISTS Proyectos (
+    id_proyecto INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT,
+    id_plantilla INT,
+    nombre_proyecto VARCHAR(255) NOT NULL,
+    descripcion_proyecto TEXT,
+    lenguajes_utilizados VARCHAR(255),
+    arquitectura_proyecto VARCHAR(255),
+    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario),
+    FOREIGN KEY (id_plantilla) REFERENCES Plantillas(id_plantilla)
+);
+
+CREATE TABLE IF NOT EXISTS Documentos (
+    id_documento INT PRIMARY KEY AUTO_INCREMENT,
+    id_proyecto INT,
+    formato_documento VARCHAR(50),
+    ruta_archivo VARCHAR(255),
+    fecha_generacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_proyecto) REFERENCES Proyectos(id_proyecto)
+);
+
+CREATE TABLE IF NOT EXISTS PreguntasIA (
+    id_pregunta_ia INT PRIMARY KEY AUTO_INCREMENT,
+    id_proyecto INT,
+    pregunta TEXT NOT NULL,
+    fecha_pregunta TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_proyecto) REFERENCES Proyectos(id_proyecto)
+);
+
+CREATE TABLE IF NOT EXISTS RespuestasUsuario (
+    id_respuesta INT PRIMARY KEY AUTO_INCREMENT,
+    id_pregunta_ia INT,
+    id_usuario INT,
+    respuesta TEXT NOT NULL,
+    fecha_respuesta TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_pregunta_ia) REFERENCES PreguntasIA(id_pregunta_ia),
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario)
+);
+
+CREATE TABLE IF NOT EXISTS FeedbackUsuarios (
+    id_feedback INT PRIMARY KEY AUTO_INCREMENT,
+    id_usuario INT,
+    id_documento INT,
+    comentario TEXT,
+    calificacion INT,
+    fecha_feedback TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES Usuarios(id_usuario),
+    FOREIGN KEY (id_documento) REFERENCES Documentos(id_documento)
+);
