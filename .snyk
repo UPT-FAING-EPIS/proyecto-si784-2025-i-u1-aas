@@ -2,3 +2,8 @@
 version: v1.25.0
 ignore: {}
 patch: {}
+# Configuración para escanear carpetas específicas
+scan:
+  target: GDI-IA_web
+  exclude:
+    - GDI-IA_web/assets/**
