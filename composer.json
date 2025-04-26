@@ -1,0 +1,21 @@
+{
+    "name": "CarlosAyala1989/proyecto-si784-2025-i-u1-aas",
+    "description": "Generador de Documentación Impulsado por IA",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CarlosAyala1989",
+            "email": "ca20220742266@virtual.upt.pe"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GDIIA\\": "GDI-IA_web/"
+        }
+    }
+}
