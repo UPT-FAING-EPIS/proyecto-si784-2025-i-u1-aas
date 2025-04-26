@@ -13,9 +13,15 @@
     "require": {
         "php": "8.0.30"
     },
+    "require-dev": {
+        "snyk/snyk-php-plugin": "^1.0"
+    },
     "autoload": {
         "psr-4": {
             "GDIIA\\": "GDI-IA_web/"
         }
+    },
+    "scripts": {
+        "security-check": "snyk test"
     }
 }
