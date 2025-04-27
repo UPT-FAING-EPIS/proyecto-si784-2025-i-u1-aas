@@ -18,10 +18,10 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'  # Cambia si tu proyecto usa otra versión de PHP
+          php-version: '8.0.30'
 
       - name: Install dependencies
-        run: composer install --no-progress --no-suggest
+        run: composer install --no-progress
 
       - name: Generate test and coverage reports
         run: |
@@ -42,4 +42,4 @@ jobs:
             -Dsonar.language=php
             -Dsonar.sources=.
         env:
-          SONAR_TOKEN: b7c612c055531f03f4b9b48fe451e65be9bd23b2
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
